@@ -1,0 +1,23 @@
+Ej1:
+Y si ingreso como primer valor -1? Fijate que los for de la funcion pueden ir afuera y no necesitas reasignar el valor a r en cada ciclo solo al final.
+Ej2:
+y si ingreso un numero negativo, existe el factorial?
+Ej3:
+Si ingreso un exponente con decimales el resultado es erroneo.
+idem Ej1.
+Ej4:
+Seria mas logico si la impresion del resultado se hace desde el main. Para que devuelve int la funcion si solo devuelve 0?
+Ej5:
+Idem Ej4
+Ej6:
+Las temperaturas deberian poder estar con decimales
+
+
+TP DESAPROBADO -> Corregir Ej1,Ej2,Ej3,Ej4 y Ej5 y estara aprobado
+
+
+----------------------------
+
+14/06/2016
+
+TP APROBADO

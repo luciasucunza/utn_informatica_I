@@ -1,0 +1,4 @@
+Una pregunta, estoy revisando las correcciones en el Ej1 y no las puedo encontrar, capaz es que no las 
+entendí, pero opera bien el calculo cuando la base es -1 y la asignacion del valor de r esta por fuera del ciclo del for, si dentro del if porque cuando es menor a 0 es distinto a cuando es mayor.
+
+

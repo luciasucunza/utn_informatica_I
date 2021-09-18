@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Spotibook: Fichero Fuente Cliente.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Spotibook
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cliente.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cliente_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;sys/wait.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;signal.h&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;netdb.h&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;termios.h&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define MYPORT              34965</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define MAX_CLIENTES_ESPERA         10</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define MAXDATASIZE             255</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define TAM_DATOS           32</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define TAM_PATH            100</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define PATH_ESTRUCTURA_LIBROS      &quot;DatosLibros.txt&quot;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define PATH_ESTRUCTURA_USUARIOS    &quot;DatosUsuarios.txt&quot;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define PATH_TEMPORAL           &quot;Temp.txt&quot;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define PATH_BIBLIOTECA         &quot;Biblioteca/&quot; </span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define TITULO_NOMBRE           0</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define AUTOR_CONTRASENA        1</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define GENERO_PERMISOS         2 </span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define LIBROS              3</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define USUARIOS            4</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structbusqueda__t.html">   37</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbusqueda__t.html">busqueda_t</a>{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">int</span> campo;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">char</span> cadena[TAM_DATOS];</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}<a class="code" href="structbusqueda__t.html">busqueda</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structcontenido__t.html">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcontenido__t.html">contenido_t</a>{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">char</span> datos[3][TAM_DATOS];</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}<a class="code" href="structcontenido__t.html">contenido</a>; </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structnodo__t.html">   46</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structnodo__t.html">nodo_t</a>{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="structcontenido__t.html">contenido</a> *<a class="code" href="structcontenido__t.html">contenido</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">struct </span><a class="code" href="structnodo__t.html">nodo_t</a> *next;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}<a class="code" href="structnodo__t.html">nodo</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a34ea28a4c3bbff9b1d5f894d60f36457">FuncionAdmin</a>( <span class="keywordtype">int</span> );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a534bf8b03922066df9083f4b523a2d8f">FuncionUser</a>( <span class="keywordtype">int</span> );</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_cliente_8h.html#af5978fab9fa6dd4ced1c3a8ab1251f7b">getch</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_cliente_8h.html#ad90f023d278646eb4637333a90f60c88">ConectarAServidor</a> (<span class="keywordtype">char</span> *);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a0f6646b7dac3beb0deec9a873256f03c">AgregarNodo</a> (<a class="code" href="structnodo__t.html">nodo</a> **, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> BorrarNodo (<a class="code" href="structnodo__t.html">nodo</a> **, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#accbf0d47e3cd222be881cbf33ea8c089">ModificarNodo</a> (<a class="code" href="structnodo__t.html">nodo</a> **, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#ae5c6909a2ebebba0ffebe67594f84ef5">MostrarNodo</a> (<a class="code" href="structnodo__t.html">nodo</a> **, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a9c449dfb818ef3f2ce610324d39bccc4">LeerLista</a> (<a class="code" href="structnodo__t.html">nodo</a> **, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> Salir (<a class="code" href="structnodo__t.html">nodo</a> **, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structnodo__t.html">nodo</a> * CargarLista (<span class="keywordtype">int</span>);  </div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="structnodo__t.html">nodo</a> * <a class="code" href="_cliente_8h.html#a0c34d0f42687c0d20bcae8851cb49a9e">BuscarNodo</a> (<a class="code" href="structnodo__t.html">nodo</a> *, <span class="keywordtype">char</span>*);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> CargarContenido (<a class="code" href="structcontenido__t.html">contenido</a> *, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a601bc55f0eaa04ab4d11bcf74bbffe76">OrdenarLista</a> (<a class="code" href="structnodo__t.html">nodo</a> **);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#ae10fdd011456c11dec72439740ba2837">LibrerarLista</a> (<a class="code" href="structnodo__t.html">nodo</a> **);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a28b304e781fa179a6b5091c2757bc2e8">NodoSwap</a> (<a class="code" href="structnodo__t.html">nodo</a>* , <a class="code" href="structnodo__t.html">nodo</a>* );</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#abd2cafee03231c012e0f9bee11a34553">EnviarLista</a>( <a class="code" href="structnodo__t.html">nodo</a> *, <span class="keywordtype">int</span> );</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a4c891a8397ada3829d6859fa937fe104">ManejoLibros</a>(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#a3ae608e2fed8721ceb138575c5a271ed">ManejoUsuarios</a>(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cliente_8h.html#aa5bed8e2574a7ae9699cfd5a3480dc48">SalirCliente</a>(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="structnodo__t.html">nodo</a> * <a class="code" href="_cliente_8h.html#ab61b1afed8d36762f299d310e357f0a2">CargarListaRecibida</a>( <span class="keywordtype">int</span> );</div><div class="ttc" id="_cliente_8h_html_a0c34d0f42687c0d20bcae8851cb49a9e"><div class="ttname"><a href="_cliente_8h.html#a0c34d0f42687c0d20bcae8851cb49a9e">BuscarNodo</a></div><div class="ttdeci">nodo * BuscarNodo(nodo *, char *)</div><div class="ttdoc">Busca un nodo a partir de un string. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:179</div></div>
+<div class="ttc" id="_cliente_8h_html_a9c449dfb818ef3f2ce610324d39bccc4"><div class="ttname"><a href="_cliente_8h.html#a9c449dfb818ef3f2ce610324d39bccc4">LeerLista</a></div><div class="ttdeci">void LeerLista(nodo **, int)</div><div class="ttdoc">Muestra la lista de usuarios o libtos ordenados alfabéticamente según su nombre o título...</div><div class="ttdef"><b>Definition:</b> FunCliente.c:440</div></div>
+<div class="ttc" id="_cliente_8h_html_a34ea28a4c3bbff9b1d5f894d60f36457"><div class="ttname"><a href="_cliente_8h.html#a34ea28a4c3bbff9b1d5f894d60f36457">FuncionAdmin</a></div><div class="ttdeci">void FuncionAdmin(int)</div><div class="ttdoc">Menú principal para el administrador. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:644</div></div>
+<div class="ttc" id="_cliente_8h_html_accbf0d47e3cd222be881cbf33ea8c089"><div class="ttname"><a href="_cliente_8h.html#accbf0d47e3cd222be881cbf33ea8c089">ModificarNodo</a></div><div class="ttdeci">void ModificarNodo(nodo **, int)</div><div class="ttdoc">Modifica un nodo que es encontrado a partir del título del libro o el nombre del usuario. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:364</div></div>
+<div class="ttc" id="_cliente_8h_html_a534bf8b03922066df9083f4b523a2d8f"><div class="ttname"><a href="_cliente_8h.html#a534bf8b03922066df9083f4b523a2d8f">FuncionUser</a></div><div class="ttdeci">void FuncionUser(int)</div><div class="ttdoc">Programa principal para el usuario normal. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:500</div></div>
+<div class="ttc" id="structbusqueda__t_html"><div class="ttname"><a href="structbusqueda__t.html">busqueda_t</a></div><div class="ttdef"><b>Definition:</b> Cliente.h:37</div></div>
+<div class="ttc" id="_cliente_8h_html_abd2cafee03231c012e0f9bee11a34553"><div class="ttname"><a href="_cliente_8h.html#abd2cafee03231c012e0f9bee11a34553">EnviarLista</a></div><div class="ttdeci">void EnviarLista(nodo *, int)</div><div class="ttdoc">El administrador envía la lista de libros/usuarios al servidor. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:268</div></div>
+<div class="ttc" id="_cliente_8h_html_a601bc55f0eaa04ab4d11bcf74bbffe76"><div class="ttname"><a href="_cliente_8h.html#a601bc55f0eaa04ab4d11bcf74bbffe76">OrdenarLista</a></div><div class="ttdeci">void OrdenarLista(nodo **)</div><div class="ttdoc">Ordena la lista de libros/usuarios según sus títulos/nombre. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:230</div></div>
+<div class="ttc" id="structnodo__t_html"><div class="ttname"><a href="structnodo__t.html">nodo_t</a></div><div class="ttdef"><b>Definition:</b> Cliente.h:46</div></div>
+<div class="ttc" id="_cliente_8h_html_ae10fdd011456c11dec72439740ba2837"><div class="ttname"><a href="_cliente_8h.html#ae10fdd011456c11dec72439740ba2837">LibrerarLista</a></div><div class="ttdeci">void LibrerarLista(nodo **)</div><div class="ttdoc">Elimina la lista de libros/usuarios. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:249</div></div>
+<div class="ttc" id="_cliente_8h_html_a0f6646b7dac3beb0deec9a873256f03c"><div class="ttname"><a href="_cliente_8h.html#a0f6646b7dac3beb0deec9a873256f03c">AgregarNodo</a></div><div class="ttdeci">void AgregarNodo(nodo **, int)</div><div class="ttdoc">Agrega un nodo a la lista. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:294</div></div>
+<div class="ttc" id="_cliente_8h_html_af5978fab9fa6dd4ced1c3a8ab1251f7b"><div class="ttname"><a href="_cliente_8h.html#af5978fab9fa6dd4ced1c3a8ab1251f7b">getch</a></div><div class="ttdeci">int getch(void)</div><div class="ttdoc">Sacado de internet. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:480</div></div>
+<div class="ttc" id="structcontenido__t_html"><div class="ttname"><a href="structcontenido__t.html">contenido_t</a></div><div class="ttdef"><b>Definition:</b> Cliente.h:42</div></div>
+<div class="ttc" id="_cliente_8h_html_a4c891a8397ada3829d6859fa937fe104"><div class="ttname"><a href="_cliente_8h.html#a4c891a8397ada3829d6859fa937fe104">ManejoLibros</a></div><div class="ttdeci">void ManejoLibros(int)</div><div class="ttdoc">Menú del administrador para manejo de libros. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:51</div></div>
+<div class="ttc" id="_cliente_8h_html_ad90f023d278646eb4637333a90f60c88"><div class="ttname"><a href="_cliente_8h.html#ad90f023d278646eb4637333a90f60c88">ConectarAServidor</a></div><div class="ttdeci">int ConectarAServidor(char *)</div><div class="ttdoc">Conexión del cliente con el servidor. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:14</div></div>
+<div class="ttc" id="_cliente_8h_html_aa5bed8e2574a7ae9699cfd5a3480dc48"><div class="ttname"><a href="_cliente_8h.html#aa5bed8e2574a7ae9699cfd5a3480dc48">SalirCliente</a></div><div class="ttdeci">void SalirCliente(int)</div><div class="ttdoc">Le avisa al servidor que va a salir. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:121</div></div>
+<div class="ttc" id="_cliente_8h_html_a3ae608e2fed8721ceb138575c5a271ed"><div class="ttname"><a href="_cliente_8h.html#a3ae608e2fed8721ceb138575c5a271ed">ManejoUsuarios</a></div><div class="ttdeci">void ManejoUsuarios(int)</div><div class="ttdoc">Menú del administrador para manejo de usuarios. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:86</div></div>
+<div class="ttc" id="_cliente_8h_html_ae5c6909a2ebebba0ffebe67594f84ef5"><div class="ttname"><a href="_cliente_8h.html#ae5c6909a2ebebba0ffebe67594f84ef5">MostrarNodo</a></div><div class="ttdeci">void MostrarNodo(nodo **, int)</div><div class="ttdoc">Muestra los datos que contiene un nodo que es encontrado a partir del título del libro o el nombre de...</div><div class="ttdef"><b>Definition:</b> FunCliente.c:403</div></div>
+<div class="ttc" id="_cliente_8h_html_a28b304e781fa179a6b5091c2757bc2e8"><div class="ttname"><a href="_cliente_8h.html#a28b304e781fa179a6b5091c2757bc2e8">NodoSwap</a></div><div class="ttdeci">void NodoSwap(nodo *, nodo *)</div><div class="ttdoc">Swap de dos nodos. </div><div class="ttdef"><b>Definition:</b> FunCliente.c:216</div></div>
+<div class="ttc" id="_cliente_8h_html_ab61b1afed8d36762f299d310e357f0a2"><div class="ttname"><a href="_cliente_8h.html#ab61b1afed8d36762f299d310e357f0a2">CargarListaRecibida</a></div><div class="ttdeci">nodo * CargarListaRecibida(int)</div><div class="ttdoc">El cliente crea una lista a partir del contenido de las estructuras (tanto de libros como de usuarios...</div><div class="ttdef"><b>Definition:</b> FunCliente.c:135</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

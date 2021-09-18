@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Spotibook: Referencia del Archivo Servidor.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Spotibook
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#define-members">'defines'</a> &#124;
+<a href="#typedef-members">'typedefs'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo Servidor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header, estructuras, defines y prototipo de funciones utilizadas por el Servidor.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;sys/wait.h&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
+<code>#include &lt;netdb.h&gt;</code><br />
+<code>#include &lt;termios.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para Servidor.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="_servidor_8h__incl.png" border="0" usemap="#_servidor_8h" alt=""/></div>
+<map name="_servidor_8h" id="_servidor_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="_servidor_8h__dep__incl.png" border="0" usemap="#_servidor_8hdep" alt=""/></div>
+<map name="_servidor_8hdep" id="_servidor_8hdep">
+</map>
+</div>
+</div>
+<p><a href="_servidor_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbusqueda__t.html">busqueda_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcontenido__t.html">contenido_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnodo__t.html">nodo_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:a6a6a184fc039ef0296a7009f60722011"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a6a184fc039ef0296a7009f60722011"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MYPORT</b>&#160;&#160;&#160;34965</td></tr>
+<tr class="separator:a6a6a184fc039ef0296a7009f60722011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12603834810682cc93beb308d7c889e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12603834810682cc93beb308d7c889e1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CLIENTES_ESPERA</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a12603834810682cc93beb308d7c889e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c16f9369be4a374a3e621f6d13bb16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16c16f9369be4a374a3e621f6d13bb16"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAXDATASIZE</b>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a16c16f9369be4a374a3e621f6d13bb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9d99013af25f5da5c412f48d06a5fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e9d99013af25f5da5c412f48d06a5fe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TAM_DATOS</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a2e9d99013af25f5da5c412f48d06a5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3dd95f54e7825e43b5b544aa1130274"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3dd95f54e7825e43b5b544aa1130274"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TAM_PATH</b>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:ae3dd95f54e7825e43b5b544aa1130274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a17c4a223ff509cdc848e66cfadf060"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a17c4a223ff509cdc848e66cfadf060"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PATH_ESTRUCTURA_LIBROS</b>&#160;&#160;&#160;&quot;DatosLibros.txt&quot;</td></tr>
+<tr class="separator:a7a17c4a223ff509cdc848e66cfadf060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833774d5680bfe6181191875a6c41592"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a833774d5680bfe6181191875a6c41592"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PATH_ESTRUCTURA_USUARIOS</b>&#160;&#160;&#160;&quot;DatosUsuarios.txt&quot;</td></tr>
+<tr class="separator:a833774d5680bfe6181191875a6c41592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54019b4a69d7d60b44950a850cf91ca5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54019b4a69d7d60b44950a850cf91ca5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PATH_TEMPORAL</b>&#160;&#160;&#160;&quot;Temp.txt&quot;</td></tr>
+<tr class="separator:a54019b4a69d7d60b44950a850cf91ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2577178ab0ceea1a00d38a82030b303c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2577178ab0ceea1a00d38a82030b303c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PATH_BIBLIOTECA</b>&#160;&#160;&#160;&quot;Biblioteca/&quot;</td></tr>
+<tr class="separator:a2577178ab0ceea1a00d38a82030b303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f70f1f1144fb2007fd313c64974db2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32f70f1f1144fb2007fd313c64974db2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TITULO_NOMBRE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a32f70f1f1144fb2007fd313c64974db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06a3e04a73cc0894cb25097f62f1327"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af06a3e04a73cc0894cb25097f62f1327"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUTOR_CONTRASENA</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af06a3e04a73cc0894cb25097f62f1327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e92aebcb73cb182ca08390c4e234798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e92aebcb73cb182ca08390c4e234798"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GENERO_PERMISOS</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a3e92aebcb73cb182ca08390c4e234798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84defef3be1dd762e333b4383f3cd38d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84defef3be1dd762e333b4383f3cd38d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIBROS</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a84defef3be1dd762e333b4383f3cd38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c22aef52c4a5b53faabcc09223b70a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c22aef52c4a5b53faabcc09223b70a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>USUARIOS</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a2c22aef52c4a5b53faabcc09223b70a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+'typedefs'</h2></td></tr>
+<tr class="memitem:a70713b328304e5e1107b3eb46213f168"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70713b328304e5e1107b3eb46213f168"></a>
+typedef struct <a class="el" href="structbusqueda__t.html">busqueda_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>busqueda</b></td></tr>
+<tr class="separator:a70713b328304e5e1107b3eb46213f168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef1399497558bff303e3888bb6d16f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ef1399497558bff303e3888bb6d16f5"></a>
+typedef struct <a class="el" href="structcontenido__t.html">contenido_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>contenido</b></td></tr>
+<tr class="separator:a0ef1399497558bff303e3888bb6d16f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10619795cad74278dbb3a96264ace3ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10619795cad74278dbb3a96264ace3ab"></a>
+typedef struct <a class="el" href="structnodo__t.html">nodo_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nodo</b></td></tr>
+<tr class="separator:a10619795cad74278dbb3a96264ace3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ab240238ca747000bc0a616b4a2eb521b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#ab240238ca747000bc0a616b4a2eb521b">FuncionAdmin</a> (int, struct in_addr)</td></tr>
+<tr class="memdesc:ab240238ca747000bc0a616b4a2eb521b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programa principal para el administrador.  <a href="#ab240238ca747000bc0a616b4a2eb521b">Más...</a><br /></td></tr>
+<tr class="separator:ab240238ca747000bc0a616b4a2eb521b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab5ffca5d5f1436ee870962d0709a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a1ab5ffca5d5f1436ee870962d0709a6c">FuncionUser</a> (int, struct in_addr)</td></tr>
+<tr class="memdesc:a1ab5ffca5d5f1436ee870962d0709a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programa principal para el usuario normal.  <a href="#a1ab5ffca5d5f1436ee870962d0709a6c">Más...</a><br /></td></tr>
+<tr class="separator:a1ab5ffca5d5f1436ee870962d0709a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fb740114509c637bbe37c21d240e35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97fb740114509c637bbe37c21d240e35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a97fb740114509c637bbe37c21d240e35">sigchld_handler</a> (int)</td></tr>
+<tr class="memdesc:a97fb740114509c637bbe37c21d240e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evitar que se creen procesos zombis a partir de los procesos hijos. <br /></td></tr>
+<tr class="separator:a97fb740114509c637bbe37c21d240e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2273ed43ee83a86ddba9e192718d5291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a2273ed43ee83a86ddba9e192718d5291">InicializarServidor</a> (void)</td></tr>
+<tr class="memdesc:a2273ed43ee83a86ddba9e192718d5291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el servidor.  <a href="#a2273ed43ee83a86ddba9e192718d5291">Más...</a><br /></td></tr>
+<tr class="separator:a2273ed43ee83a86ddba9e192718d5291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675d1cc3987880eb53bd6ee31c5c56e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a675d1cc3987880eb53bd6ee31c5c56e3">VerificarUser</a> (<a class="el" href="structnodo__t.html">nodo</a> *, char *, char *)</td></tr>
+<tr class="memdesc:a675d1cc3987880eb53bd6ee31c5c56e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si el usuario y la contraseña estan bien ingresados y que permisos tiene.  <a href="#a675d1cc3987880eb53bd6ee31c5c56e3">Más...</a><br /></td></tr>
+<tr class="separator:a675d1cc3987880eb53bd6ee31c5c56e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84b0c36787ef484cf4f2e9f279a6e23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo__t.html">nodo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#ad84b0c36787ef484cf4f2e9f279a6e23">CargarDatosLista</a> (char *)</td></tr>
+<tr class="memdesc:ad84b0c36787ef484cf4f2e9f279a6e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea y carga la lista de libros o usuarios a partir de un archivo de texto que contiene los datos de la misma.  <a href="#ad84b0c36787ef484cf4f2e9f279a6e23">Más...</a><br /></td></tr>
+<tr class="separator:ad84b0c36787ef484cf4f2e9f279a6e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7972996e57a6e8534eec2849eeb915cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo__t.html">nodo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a7972996e57a6e8534eec2849eeb915cc">BusquedaLibro</a> (<a class="el" href="structbusqueda__t.html">busqueda</a> *, <a class="el" href="structnodo__t.html">nodo</a> *)</td></tr>
+<tr class="memdesc:a7972996e57a6e8534eec2849eeb915cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca el libro deseado segun el criterio que el cliente seleccionó  <a href="#a7972996e57a6e8534eec2849eeb915cc">Más...</a><br /></td></tr>
+<tr class="separator:a7972996e57a6e8534eec2849eeb915cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f202357db6ac07b8e7d6182aad2497e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a6f202357db6ac07b8e7d6182aad2497e">BorrarLista</a> (<a class="el" href="structnodo__t.html">nodo</a> **)</td></tr>
+<tr class="memdesc:a6f202357db6ac07b8e7d6182aad2497e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina la lista.  <a href="#a6f202357db6ac07b8e7d6182aad2497e">Más...</a><br /></td></tr>
+<tr class="separator:a6f202357db6ac07b8e7d6182aad2497e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa33dbae4d3d40d5e982180ca5a2ab1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#aaa33dbae4d3d40d5e982180ca5a2ab1c">CargarBuffer</a> (FILE *, char *)</td></tr>
+<tr class="memdesc:aaa33dbae4d3d40d5e982180ca5a2ab1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga el buffer de texto que el servidor enviará al cliente.  <a href="#aaa33dbae4d3d40d5e982180ca5a2ab1c">Más...</a><br /></td></tr>
+<tr class="separator:aaa33dbae4d3d40d5e982180ca5a2ab1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369cf43fcbda77b7f45633389b9d49f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a369cf43fcbda77b7f45633389b9d49f5">MyStrcmp</a> (char *, char *)</td></tr>
+<tr class="memdesc:a369cf43fcbda77b7f45633389b9d49f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algoritmo de búsqueda de los títulos.  <a href="#a369cf43fcbda77b7f45633389b9d49f5">Más...</a><br /></td></tr>
+<tr class="separator:a369cf43fcbda77b7f45633389b9d49f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9a7e75cadd612eaa92175a2e5bfa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#aea9a7e75cadd612eaa92175a2e5bfa78">EnviarArchivo</a> (char *, int)</td></tr>
+<tr class="memdesc:aea9a7e75cadd612eaa92175a2e5bfa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía al administrador las estructuras con los datos de usuarios o libros para que el cliente pueda crear una lista.  <a href="#aea9a7e75cadd612eaa92175a2e5bfa78">Más...</a><br /></td></tr>
+<tr class="separator:aea9a7e75cadd612eaa92175a2e5bfa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa670a7ee71b828a97ad03218d68f91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#a6fa670a7ee71b828a97ad03218d68f91">RecibirLista</a> (char *, int)</td></tr>
+<tr class="memdesc:a6fa670a7ee71b828a97ad03218d68f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recibe las estructuras de una lista y las guarda en un archivo.  <a href="#a6fa670a7ee71b828a97ad03218d68f91">Más...</a><br /></td></tr>
+<tr class="separator:a6fa670a7ee71b828a97ad03218d68f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe94a623e01be57d6a8ed592dae65de1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe94a623e01be57d6a8ed592dae65de1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reemplazar</b> (char *, char *)</td></tr>
+<tr class="separator:abe94a623e01be57d6a8ed592dae65de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc78a1d6c0587e6886bd4320bde292ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_servidor_8h.html#acc78a1d6c0587e6886bd4320bde292ed">GuardarPath</a> (char *, char *)</td></tr>
+<tr class="memdesc:acc78a1d6c0587e6886bd4320bde292ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatena el titulo del libro requerido por el cliente con el path fijo de la pc del cliente en donde se encuentran todos los libros.  <a href="#acc78a1d6c0587e6886bd4320bde292ed">Más...</a><br /></td></tr>
+<tr class="separator:acc78a1d6c0587e6886bd4320bde292ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Header, estructuras, defines y prototipo de funciones utilizadas por el Servidor. </p>
+<dl class="section author"><dt>Autor</dt><dd>Fiorentino Federico Sucunza Lucia </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>19-12-16 </dd></dl>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="a6f202357db6ac07b8e7d6182aad2497e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BorrarLista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnodo__t.html">nodo</a> **&#160;</td>
+          <td class="paramname"><em>nodoprimero</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elimina la lista. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">**nodoprimero</td><td>Dirección de inicio de la lista </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7972996e57a6e8534eec2849eeb915cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo__t.html">nodo</a>* BusquedaLibro </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbusqueda__t.html">busqueda</a> *&#160;</td>
+          <td class="paramname"><em>criterio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnodo__t.html">nodo</a> *&#160;</td>
+          <td class="paramname"><em>nodooriginal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca el libro deseado segun el criterio que el cliente seleccionó </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*criterio</td><td>Puntero a busqueda, contiene el criterio seleccionado y la cadena deseada (la misma puede ser el título, género o autor) </td></tr>
+    <tr><td class="paramname">*nodooriginal</td><td>Puntero a inicio de la lista de libros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a inicio de la lista con las coincidencias </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa33dbae4d3d40d5e982180ca5a2ab1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CargarBuffer </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fd_libro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>bufferlibro</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carga el buffer de texto que el servidor enviará al cliente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*fd_libro</td><td>File descriptor del libro que el cliente desea leer </td></tr>
+    <tr><td class="paramname">*bufferlibro</td><td>Buffer que se enviará al cliente, el mismo es cargado en esta función </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>0 si se terminó el libro, 1 si todavía no finalizó </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad84b0c36787ef484cf4f2e9f279a6e23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo__t.html">nodo</a>* CargarDatosLista </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pathestructura</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea y carga la lista de libros o usuarios a partir de un archivo de texto que contiene los datos de la misma. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*pathestructura</td><td>Nombre del archivo que contiene los datos de la lista </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a inicio de la lista </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea9a7e75cadd612eaa92175a2e5bfa78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnviarArchivo </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envía al administrador las estructuras con los datos de usuarios o libros para que el cliente pueda crear una lista. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*path</td><td>String con el nombre del archivo que contiene las estructuras </td></tr>
+    <tr><td class="paramname">sockfd</td><td>File descriptor del socket </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab240238ca747000bc0a616b4a2eb521b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncionAdmin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct in_addr&#160;</td>
+          <td class="paramname"><em>ip_cliente</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programa principal para el administrador. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sockfd</td><td>File descriptor del socket </td></tr>
+    <tr><td class="paramname">ip_cliente</td><td>Ip del cliente </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ab5ffca5d5f1436ee870962d0709a6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncionUser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct in_addr&#160;</td>
+          <td class="paramname"><em>ip_cliente</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programa principal para el usuario normal. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sockfd</td><td>File descriptor del socket </td></tr>
+    <tr><td class="paramname">ip_cliente</td><td>Ip del cliente </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acc78a1d6c0587e6886bd4320bde292ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GuardarPath </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>titulo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pathlibro</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatena el titulo del libro requerido por el cliente con el path fijo de la pc del cliente en donde se encuentran todos los libros. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*titulo</td><td>Nombre del libro requerido por el cliente </td></tr>
+    <tr><td class="paramname">*pathlibro</td><td>Es el path de la biblioteca que se encuentra en la pc del servidor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2273ed43ee83a86ddba9e192718d5291"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InicializarServidor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa el servidor. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>File descriptor del socket por éxito </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a369cf43fcbda77b7f45633389b9d49f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MyStrcmp </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>texto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>palabra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Algoritmo de búsqueda de los títulos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*texto</td><td>El título </td></tr>
+    <tr><td class="paramname">*palabra</td><td>La búsqueda </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>0 si hay coincidencia, 1 si no hay coincidencia </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fa670a7ee71b828a97ad03218d68f91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RecibirLista </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recibe las estructuras de una lista y las guarda en un archivo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*path</td><td>String con el nombre del archivo en el que se guarda </td></tr>
+    <tr><td class="paramname">sockfd</td><td>File descriptor del socket </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a675d1cc3987880eb53bd6ee31c5c56e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VerificarUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnodo__t.html">nodo</a> *&#160;</td>
+          <td class="paramname"><em>nodoprimero</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica si el usuario y la contraseña estan bien ingresados y que permisos tiene. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodoprimero</td><td>Inicio de la lista de usuarios </td></tr>
+    <tr><td class="paramname">user</td><td>String con el nombre de usuario </td></tr>
+    <tr><td class="paramname">pass</td><td>String con la contraseña </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>0 si es Admin, 1 si es usuario normal, 2 si no se encontro en la lista de usuarios </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

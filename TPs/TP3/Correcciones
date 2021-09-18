@@ -1,0 +1,12 @@
+Ej1:
+12) Mal la representacion en punto flotante
+
+Ej4:
+9) Mal , esa no es la representacion en complemento a 2. Recordar que Ca2(binario) = Ca1(binario) + 1
+
+Ej5:
+Los valores maximos y minimos para el numero en binario signado son 15 y -15 ya que se puede representar CON signo
+(1111)2 = (15)10
+(-1111)2 + (-15)10
+
+TP DESAPROBADO -> Corregir ejercicios 1.12,4.9 y 5 y estara aprobado

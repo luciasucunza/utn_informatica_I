@@ -1,0 +1,24 @@
+Ej2:
+Esta bien, pero fijate que a la ultima condicion se podria ingresar unicamente con un else y no else if() ya que es la unica condicion restante. Esto tambien suma mas legibilidad
+Ej3:
+Y si ingreso un radio negativo?
+Ej4:
+Idem Ej2
+Ej7:
+Funciona pero es mucho mas legible utilar un for cuando sabemos la cantidad de veces que debemos repetir una operacion y while cuando estamos esperando un cambio de estado
+
+
+
+TP DESAPROBADO -> Corregir Ej3 y Ej7 y estara aprobado
+
+
+-----------------------------------------
+28/05/2016
+
+Ej2:
+No compila
+
+Ej4:
+No compila
+
+TP DESAPROBADO -> Corregir Ej4 y Ej2 y estara aprobado
